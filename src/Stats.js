@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import './Stats.css';
 import axios from 'axios';
 import StatsRow from './StatsRow';
-
+import {db} from './firebase';
 function Stats() {
 
 const BASE_URL='https://finnhub.io/api/v1/quote?symbol="'

@@ -1,5 +1,6 @@
 import React from 'react'
 import './StatsRow.css'
+import StockSVG from './stock.svg'
 function StatsRow() {
     return (
         <div className="row" onClick={getModal}>
@@ -10,7 +11,7 @@ function StatsRow() {
         }</p>
       </div>
       <div className="row__chart">
-        <img src={StockChart} height={16}/>
+        <img src={StockSVG} height={16}/>
       </div>
       <div className="row__numbers">
         <p className="row__price">{props.price}</p>
